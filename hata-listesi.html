@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>KaliteTakip | Hata Listesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="icerik-alani">
+    <h1>Hata Listesi</h1>
+   
+<p>Sistemde kayıtlı hataları buradan takip edebilirsiniz.</p>
+
+<div class="arama-alani">
+    <input
+        type="text"
+        id="hataArama"
+        placeholder="Hata başlığı ara..."
+    >
+</div>
+
+<div class="filtre-alani">
+    <label for="oncelikFiltresi">Önceliğe göre filtrele:</label>
+
+    <select id="oncelikFiltresi">
+        <option value="tum">Tüm Öncelikler</option>
+        <option value="Yüksek">Yüksek</option>
+        <option value="Orta">Orta</option>
+        <option value="Düşük">Düşük</option>
+    </select>
+</div>
+
+<p id="sonucMesaji" style="display: none;">
+    Aradığınız kriterlere uygun hata bulunamadı.
+</p>
+    <table>
+    <thead>
+        <tr>
+            <th>Hata ID</th>
+            <th>Hata Başlığı</th>
+            <th>Öncelik</th>
+            <th>Durum</th>
+            <th>Tarih</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>HT-001</td>
+    <td>Giriş ekranında hata veriyor</td>
+    <td><span class="oncelik yuksek">Yüksek</span></td>
+    <td><span class="durum acik">Açık</span></td>
+    <td>26.10.2026</td>
+    <td>
+    <a href="#" class="detay-baglantisi">Detay</a>
+</td>
+</tr>
+<tr>
+    <td>HT-002</td>
+    <td>Veri kaydetme sorunu</td>
+    <td><span class="oncelik orta">Orta</span></td>
+<td><span class="durum inceleniyor">İnceleniyor</span></td>  
+  <td>25.10.2026</td>
+</tr>
+
+<tr>
+    <td>HT-003</td>
+    <td>Rapor oluşturma hatası</td>
+    <td><span class="oncelik dusuk">Düşük</span></td>
+<td><span class="durum cozuldu">Çözüldü</span></td>    <td>24.10.2026</td>
+</tr>
+<script src="hata-listesi.js"></script>
+    </tbody>
+</table>
+
+<div id="hataDetayi" class="hata-detayi" style="display: none;">
+    <h2>Hata Detayları</h2>
+    <p id="detayBaslik"></p>
+    <p id="detayOncelik"></p>
+    <p id="detayDurum"></p>
+    <p id="detayTarih"></p>
+</div>
+
+    </tbody>
+</table>
+</main>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>KaliteTakip | Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="panel">
+
+    <aside class="yan-menu">
+        <h1>KaliteTakip</h1>
+
+        <nav>
+            <a href="ana-sayfa.html" class="aktif">Ana Sayfa</a>
+            <a href="hata-listesi.html">Hata Listesi</a>
+            <a href="#">Yeni Hata Ekle</a>
+            <a href="#">Test Senaryoları</a>
+            <a href="#">Test Çalıştırmaları</a>
+            <a href="#">Raporlar</a>
+            <a href="#">Ayarlar</a>
+        </nav>
+
+        <div class="kullanici-bilgisi">
+            <strong>Kullanıcı</strong>
+            <p>Standart Kullanıcı</p>
+        </div>
+    </aside>
+
+    <div class="icerik-alani">
+        <main>
+            <section class="hosgeldin">
+                <h2>Hata Takip ve Test Yönetim Sistemi</h2>
+                <p>Yazılım hatalarını takip edin ve test süreçlerini yönetin.</p>
+            </section>
+
+            <section class="istatistikler">
+                <div class="istatistik-karti">
+                    <h3>Toplam Hata</h3>
+                    <p id="toplamHata">0</p>
+                </div>
+
+                <div class="istatistik-karti">
+                    <h3>Çözülen Hatalar</h3>
+                    <p id="cozulenHata">0</p>
+                </div>
+
+                <div class="istatistik-karti">
+                    <h3>Bekleyen Hatalar</h3>
+                    <p id="bekleyenHata">0</p>
+                </div>
+            </section>
+            <section class="hata-tablosu">
+    <h2>Son Eklenen Hatalar</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Hata No</th>
+                <th>Hata Başlığı</th>
+                <th>Öncelik</th>
+                <th>Durum</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>HT-001</td>
+                <td>Giriş ekranı doğrulama hatası</td>
+                <td>Yüksek</td>
+                <td>Açık</td>
+            </tr>
+
+            <tr>
+                <td>HT-002</td>
+                <td>Rapor ekranında veri eksikliği</td>
+                <td>Orta</td>
+                <td>İnceleniyor</td>
+            </tr>
+
+            <tr>
+                <td>HT-003</td>
+                <td>Test sonucu yanlış görüntüleniyor</td>
+                <td>Düşük</td>
+                <td>Çözüldü</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section class="test-sonuclari">
+    <h2>Test Sonuçları</h2>
+
+    <div class="test-kartlari">
+        <div class="test-karti">
+            <h3>Toplam Test</h3>
+            <p>24</p>
+        </div>
+
+        <div class="test-karti">
+            <h3>Başarılı</h3>
+            <p>18</p>
+        </div>
+
+        <div class="test-karti">
+            <h3>Başarısız</h3>
+            <p>6</p>
+        </div>
+        <div class="test-basari">
+    <div class="basari-baslik">
+        <h3>Test Başarı Oranı</h3>
+        <strong id="basariOrani">%75</strong>
+    </div>
+
+    <div class="basari-cizgisi">
+        <div class="basari-doluluk"></div>
+    </div>
+</div>
+    </div>
+</section>
+        </main>
+    </div>
+
+</div>
+<script src="ana-sayfa.js"></script>
+</body>
+</html>
